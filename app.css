@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-hc-red: #ec3750;
+  --font-sans: 'Phantom Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Zarathustra', Georgia, serif;
+  --font-size-hc-display: clamp(3.25rem, 12vw, 5.625rem);
+  --font-size-hc-title:   clamp(2.2rem, 4vw, 3.4rem);
+  --font-size-hc-heading: 2.5rem;
+  --font-size-hc-xl:      2rem;
+  --font-size-hc-lg:      1.5rem;
+  --font-size-hc-md:      1.25rem;
+  --font-size-hc-sm:      1rem;
+  --font-size-hc-xs:      0.875rem;
+}
+
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Zarathustra";
+  src: url("https://clubs.hackclub.com/fonts/zarathustra-kerned.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Phantom Sans", system-ui, sans-serif;
+}
+
+:root {
+  --hc-gradient-rainbow: repeating-linear-gradient(
+    105deg,
+    #ec3750 0%,
+    #ff8c37 16%,
+    #f1c40f 32%,
+    #33d6a6 48%,
+    #338eda 64%,
+    #a633d6 80%,
+    #ec3750 100%
+  );
+}
+
+.bg-hc-rainbow {
+  background-image: var(--hc-gradient-rainbow);
+}
