@@ -1,5 +1,18 @@
 @import 'tailwindcss';
 
+html {
+  scroll-behavior: smooth;
+}
+
+.google {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
 @theme {
   --color-hc-red: #ec3750;
   --font-sans: 'Phantom Sans', system-ui, -apple-system, sans-serif;
@@ -14,7 +27,7 @@
   --font-size-hc-xs:      0.875rem;
   --radius-hc-card: 16px;
   --radius-hc-xl: 24px;
-  --radius-hx-2xl: 28px;
+  --radius-hc-2xl: 28px;
   --radius-hc-pill: 9999px;
   --shadow-hc-card: 0 2px 16px rgba(0, 0, 0, 0.1);
   --shadow-hc-raised: 0 20px 50px rgba(91, 52, 18, 0.08);
@@ -73,7 +86,7 @@
 
 @font-face {
   font-family: "Zarathustra";
-  src: url("https://clubs.hackclub.com/fonts/zarathustra-kerned.woff2") format("woff2");
+  src: url(/fonts/zarathustra-kerned.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -110,4 +123,32 @@ body {
 
 .bg-hc-ink     { 
   background-image: var(--hc-gradient-ink); 
+}
+
+@keyframes clubs-rainbow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-rainbow {
+  background: repeating-linear-gradient(
+    105deg,
+    #ec3750 0%,
+    #ff8c37 16%,
+    #f1c40f 32%,
+    #33d6a6 48%,
+    #33d6a6 64%,
+    #a633d6 80%,
+    #ec3750 100%
+  ) 0 0 / 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: 6s linear infinite clubs-rainbow;
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.55));
 }
