@@ -1,1 +1,91 @@
-yo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 · slayerlabs</title>
+    <link rel="preload" href="/fonts/zarathustra-kerned.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="/slayerlabs-logo.svg" type="text/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#121217] text-white min-h-screen flex flex-col justify-between">
+    <header class="w-full flex items-center justify-between px-6 py-4">
+        <div class="flex items-center gap-3">
+            <a href="https://hackclub.com" target="_blank" class="transition hover:scale-105">
+                <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" class="w-28 drop-shadow-md">
+            </a>
+            <a href="/" class="hover:scale-105 transition">
+                <img src="/slayerlabs-logo.svg" alt="slayerlabs" class="w-20 md:w-24 drop-shadow-md">
+            </a>
+        </div>
+        <div>
+            <a href="/" class="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white text-sm font-medium transition backdrop-blur-md">
+                &larr; Back to homepage
+            </a>
+        </div>
+    </header>
+    <main class="relative flex-1 flex flex-col items-center justify-center text-center px-6 py-16 overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#ec3750]/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 max-w-2xl mx-auto">
+            <h1 class="text-7xl md:text-9xl font-display font-normal tracking-tight leading-none mb-6">
+                <span class="animate-rainbow">404</span>
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-display font-normal text-white/90 mb-4">
+                Looks like you took a wrong turn.
+            </h2>
+            <p class="text-white/60 text-sm md:text-base max-w-lg mx-auto leading-relaxed mb-8">
+                This page either doesn't exist, got removed during an update, or maybe tanzeem accidentally wiped it during a debugging session.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center items-center">
+                <a href="/" class="px-7 py-3 rounded-full bg-[#ec3750] hover:bg-[#d92942] text-white font-bold text-base hover:scale-105 transition shadow-lg flex items-center gap-2">
+                    <span>Back to homepage</span>
+                    <span>&rarr;</span>
+                </a>
+                <a href="https://clubs.hackclub.com/auth/member?join=R8G47D" target="_blank" rel="noopener noreferrer" class="px-7 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium text-base transition backdrop-blur-sm">
+                    Join the club anyway
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="py-8 border-t border-white/10 text-xs text-white/50">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div class="flex items-center gap-2">
+                <span class="text-white font-bold text-base animate-rainbow">slayerlabs</span>
+                <span class="px-0.5 py-1 text-white/60">an indie Hack Club</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span>made with <img src="/ios-red-heart.png" alt="love" class="w-4 h-4 inline-block mx-0.5 -mt-0.5"> by <a href="https://metropolis.cyberslayercorpz.dev" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-[#ec3750] transition">tanzeemrockz</a></span>
+                <span class="text-white/20">&bull;</span>
+                <a href="https://github.com/tanzeemrockz/slayerlabs" target="_blank" rel="noopener noreferrer" class="hover:text-[#ec3750] transition inline-flex items-center gap-1.5 text-white/70">
+                    <span>open sourced on GitHub</span>
+                    <svg class="w-3.5 h-3.5" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="github" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 6C21.1 6 23.247 6.576 24.336 7.665C25.425 8.754 26 10.9 26 16C26 21.1 25.425 23.247 24.336 24.336C23.247 25.425 21.1 26 16 26C10.9 26 8.753 25.425 7.664 24.336C6.575 23.247 6 21.1 6 16C6 10.9 6.575 8.753 7.664 7.665C8.753 6.576 10.9 6 16 6ZM28 16C28 6 26 4 16 4C6 4 4 6 4 16C4 26 6 28 16 28C26 28 28 26 28 16Z"/>
+                        <path d="M13.313 23.948C13.318 24.831 13.328 27.397 13.328 27.647H18.742C18.742 27.532 18.743 27.122 18.745 26.573C18.749 25.464 18.755 23.791 18.755 22.845C18.755 21.858 18.406 21.212 18.014 20.885C20.447 20.624 23 19.729 23 15.664C23 14.509 22.577 13.565 21.877 12.825C21.99 12.557 22.365 11.481 21.769 10.025C21.769 10.025 20.854 9.74 18.769 11.109C17.896 10.874 16.962 10.757 16.035 10.753C15.106 10.757 14.172 10.874 13.301 11.109C11.215 9.74 10.298 10.025 10.298 10.025C9.704 11.481 10.078 12.557 10.191 12.825C9.493 13.565 9.067 14.509 9.067 15.664C9.067 19.719 11.616 20.627 14.041 20.894C13.729 21.158 13.447 21.625 13.348 22.308C12.726 22.579 11.144 23.046 10.17 21.429C10.17 21.429 9.593 20.413 8.497 20.338C8.497 20.338 7.431 20.325 8.422 20.981C8.422 20.981 9.138 21.307 9.635 22.529C9.635 22.529 10.276 24.587 13.313 23.948Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/tanzeemrockz/slayerlabs" target="_blank" rel="noopener noreferrer" 
+                   class="text-white/60 hover:text-white transition-all duration-200 hover:scale-110" 
+                   aria-label="GitHub">
+                    <svg class="w-4 h-4" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 6C21.1 6 23.247 6.576 24.336 7.665C25.425 8.754 26 10.9 26 16C26 21.1 25.425 23.247 24.336 24.336C23.247 25.425 21.1 26 16 26C10.9 26 8.753 25.425 7.664 24.336C6.575 23.247 6 21.1 6 16C6 10.9 6.575 8.753 7.664 7.665C8.753 6.576 10.9 6 16 6ZM28 16C28 6 26 4 16 4C6 4 4 6 4 16C4 26 6 28 16 28C26 28 28 26 28 16Z"/>
+                        <path d="M13.313 23.948C13.318 24.831 13.328 27.397 13.328 27.647H18.742C18.742 27.532 18.743 27.122 18.745 26.573C18.749 25.464 18.755 23.791 18.755 22.845C18.755 21.858 18.406 21.212 18.014 20.885C20.447 20.624 23 19.729 23 15.664C23 14.509 22.577 13.565 21.877 12.825C21.99 12.557 22.365 11.481 21.769 10.025C21.769 10.025 20.854 9.74 18.769 11.109C17.896 10.874 16.962 10.757 16.035 10.753C15.106 10.757 14.172 10.874 13.301 11.109C11.215 9.74 10.298 10.025 10.298 10.025C9.704 11.481 10.078 12.557 10.191 12.825C9.493 13.565 9.067 14.509 9.067 15.664C9.067 19.719 11.616 20.627 14.041 20.894C13.729 21.158 13.447 21.625 13.348 22.308C12.726 22.579 11.144 23.046 10.17 21.429C10.17 21.429 9.593 20.413 8.497 20.338C8.497 20.338 7.431 20.325 8.422 20.981C8.422 20.981 9.138 21.307 9.635 22.529C9.635 22.529 10.276 24.587 13.313 23.948Z"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/slayerlabs" target="_blank" rel="noopener noreferrer" 
+                   class="text-white/60 hover:text-[#ec3750] transition-all duration-200 hover:scale-110" 
+                   aria-label="Instagram">
+                    <svg class="w-4 h-4" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor">
+                        <path d="M16 6c5.1 0 7.247.575 8.336 1.664C25.425 8.753 26 10.9 26 16s-.575 7.247-1.664 8.336C23.247 25.425 21.1 26 16 26s-7.247-.575-8.336-1.664C6.575 23.247 6 21.1 6 16s.575-7.247 1.664-8.336C8.753 6.575 10.9 6 16 6zm0-2c10 0 12 2 12 12s-2 12-12 12S4 26 4 16 6 4 16 4z"/>
+                        <path d="M16 9.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.845-10.405a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
