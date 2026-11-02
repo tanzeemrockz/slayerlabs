@@ -10,6 +10,8 @@ export default defineConfig({
       input: {
         main: 'index.html',
         notFound: '404.html',
+        brand: 'brand/index.html',
+        posters: 'posters/index.html'
       },
     },
   },
